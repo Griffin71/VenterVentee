@@ -6,7 +6,7 @@ Welcome to the official landing page for **Venter Ventee**, a digital sanctuary 
 
 ## 🚀 Overview
 
-Venter Ventee is a web-based platform dedicated to mental health and personal growth. With unique features like **AI support**, **venting/listening sessions**, and **daily tracking tools**, users can take control of their emotional journey—all in a safe, private, and supportive environment.
+Venter Ventee is a app-based platform dedicated to mental health and personal growth. With unique features like **AI support**, **venting/listening sessions**, and **daily tracking tools**, users can take control of their emotional journey—all in a safe, private, and supportive environment.
 
 ---
 
