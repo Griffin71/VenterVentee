@@ -1,0 +1,405 @@
+/* compatability.css */
+
+/* Default styles here (desktop-first approach) */
+
+/* Phones (up to 600px) */
+@media only screen and (max-width: 600px) {
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    header nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .feature-card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    #features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #how-it-works ol {
+      padding-left: 1em;
+      text-align: left;
+    }
+  
+    .download-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .fine-print {
+      padding: 0 10px;
+    }
+  }
+  
+  /* Tablets (601px to 1024px) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .feature-card {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  
+    .download-buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  /* Large Devices (1025px and above) */
+  @media only screen and (min-width: 1025px) {
+    #features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+  
+    .feature-card {
+      flex: 1 1 30%;
+      max-width: 30%;
+    }
+  }
+/* styles.css */
+
+/* === DEFAULT STYLES (Desktop First) === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .slogan {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background: #fafafa;
+  }
+  
+  #features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  .download-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  footer {
+    background: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .fine-print {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+  }
+  
+  /* === PHONES === */
+  
+  /* Extra Small Phones (up to 320px, e.g. old iPhone SE) */
+  @media only screen and (max-width: 320px) {
+    body {
+      font-size: 12px;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .slogan {
+      font-size: 14px;
+    }
+  
+    header, footer {
+      padding: 10px;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .feature-card {
+      width: 95%;
+    }
+  
+    .download-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  /* Small Phones (321px to 375px, e.g. iPhone 6/7/8) */
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .logo {
+      font-size: 22px;
+    }
+  
+    .slogan {
+      font-size: 14px;
+    }
+  
+    header, footer {
+      padding: 15px;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .feature-card {
+      width: 90%;
+    }
+  
+    .download-buttons {
+      flex-direction: column;
+    }
+  }
+  
+  /* Medium Phones (376px to 414px, e.g. iPhone XR, Galaxy S9) */
+  @media only screen and (min-width: 376px) and (max-width: 414px) {
+    .logo {
+      font-size: 24px;
+    }
+  
+    .slogan {
+      font-size: 15px;
+    }
+  
+    nav {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .feature-card {
+      width: 95%;
+    }
+  }
+  
+  /* Large Phones (415px to 600px) */
+  @media only screen and (min-width: 415px) and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo {
+      font-size: 26px;
+    }
+  
+    .slogan {
+      font-size: 16px;
+    }
+  
+    nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .feature-card {
+      width: 80%;
+    }
+  }
+  
+  /* === TABLETS === */
+  
+  /* Small Tablets (601px to 768px) */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .logo {
+      font-size: 28px;
+    }
+  
+    .slogan {
+      font-size: 17px;
+    }
+  
+    header {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    nav {
+      gap: 15px;
+    }
+  
+    .feature-card {
+      max-width: 45%;
+    }
+  }
+  
+  /* Medium Tablets (769px to 900px) */
+  @media only screen and (min-width: 769px) and (max-width: 900px) {
+    .feature-card {
+      flex: 1 1 40%;
+      max-width: 40%;
+    }
+  
+    .download-buttons {
+      justify-content: space-around;
+    }
+  }
+  
+  /* === LAPTOPS & DESKTOPS === */
+  
+  /* Small Laptops (901px to 1024px) */
+  @media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .feature-card {
+      max-width: 30%;
+    }
+  
+    .logo {
+      font-size: 30px;
+    }
+  
+    .slogan {
+      font-size: 18px;
+    }
+  }
+  
+  /* Standard Desktops (1025px to 1280px) */
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .feature-card {
+      max-width: 30%;
+    }
+  
+    #features {
+      gap: 50px;
+    }
+  }
+  
+  /* Large Desktops (1281px to 1600px) */
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .feature-card {
+      max-width: 28%;
+    }
+  
+    .logo {
+      font-size: 34px;
+    }
+  
+    .slogan {
+      font-size: 20px;
+    }
+  }
+  
+  /* Extra Large Screens (1601px to 1920px) */
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .feature-card {
+      max-width: 25%;
+    }
+  
+    header, footer {
+      padding: 60px;
+    }
+  }
+  
+  /* Ultra-Wide Screens (1921px to 2560px) */
+  @media only screen and (min-width: 1921px) and (max-width: 2560px) {
+    .logo {
+      font-size: 40px;
+    }
+  
+    .slogan {
+      font-size: 24px;
+    }
+  
+    .feature-card {
+      max-width: 22%;
+    }
+  
+    .download-buttons {
+      gap: 40px;
+    }
+  }
+  
+  /* 4K Displays (2561px and up) */
+  @media only screen and (min-width: 2561px) {
+    body {
+      font-size: 22px;
+    }
+  
+    .logo {
+      font-size: 48px;
+    }
+  
+    .slogan {
+      font-size: 28px;
+    }
+  
+    .feature-card {
+      max-width: 20%;
+      padding: 40px;
+    }
+  
+    header, footer {
+      padding: 80px;
+    }
+  
+    .download-buttons {
+      gap: 60px;
+    }
+  }
+    
